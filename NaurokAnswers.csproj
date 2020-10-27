@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\KuzCode\НаОтвет\NaurokAnswers.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11FD1B4E-8F9C-45FB-8204-8A0A3A82819C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>NaurokAnswers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>NaurokAnswers</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>lib\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector">
+      <HintPath>lib\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pomelo.EntityFrameworkCore.MySql">
+      <HintPath>lib\Pomelo.EntityFrameworkCore.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>lib\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="eval_a.cs" />
+    <Compile Include="eval_b.cs" />
+    <Compile Include="eval_c.cs" />
+    <Compile Include="AnswersForm.cs" />
+    <Compile Include="TestSession.cs" />
+    <Compile Include="AccountLoginData.cs" />
+    <Compile Include="DocumentFinder.cs" />
+    <Compile Include="OnDocumentIsFoundArgs.cs" />
+    <Compile Include="OnNewDocumentArgs.cs" />
+    <Compile Include="FinderSystem.cs" />
+    <Compile Include="OnErrorArgs.cs" />
+    <Compile Include="HelpClass.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="OldVersionForm.cs" />
+    <Compile Include="RequestsSender.cs" />
+    <Compile Include="ResponsesParser.cs" />
+    <Compile Include="FlashCard.cs" />
+    <Compile Include="QuestionOption.cs" />
+    <Compile Include="QuestionType.cs" />
+    <Compile Include="TestQuestion.cs" />
+    <Compile Include="DataBase\ApplicationContext.cs" />
+    <Compile Include="DataBase\Info.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnswersForm.resx" />
+    <EmbeddedResource Include="eval_b.resx" />
+    <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="OldVersionForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
